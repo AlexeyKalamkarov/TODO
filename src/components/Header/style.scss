@@ -1,0 +1,23 @@
+.header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .header-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .icon {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .line {
+            flex-grow: 1;
+            min-width: 240px;
+            height: 2px;
+            background: white;
+        }
+    }
+}
