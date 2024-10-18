@@ -15,7 +15,7 @@ function App() {
     // const id = new Date();//берем в качестве id текушие дату и время в 
 
 const addTodo = todo => {
-    setTodos([...todos, {id: uuidv4(), task: todo, completed: false, isEditing: false}])
+    setTodos([...todos, {id: uuidv4(), task: todo, completed: false, isEditing: false, date: new Date()}])
     
 }
 const deleteTodo = (id) => {
@@ -23,10 +23,10 @@ const deleteTodo = (id) => {
         prvTodos.filter(todo => todo.id !== id))
 }
 const editTodo = id => {
-    setTodos(todos.map(todo => todo.id === id ? {...todo, isEditing: !todo.isEditing}: todo))
+    setTodos(todos.map(todo => todo.id === id ? {...todo, date: new Date(), isEditing: !todo.isEditing}: todo))
 }
 const editTask = (task, id) => {
-    setTodos(todos.map(todo => todo.id === id ? {...todo, task, isEditing: !todo.isEditing}: todo))
+    setTodos(todos.map(todo => todo.id === id ? {...todo, task, date: new Date(), isEditing: !todo.isEditing}: todo))
 }
   return (
     <div className="App">

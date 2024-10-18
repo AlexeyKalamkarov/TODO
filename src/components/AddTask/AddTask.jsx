@@ -20,6 +20,7 @@ export const AddTask = ({addTodo}) => {
 
     function handleSubmit(e){
         addTodo(inputValue)
+        
         setInputValue('')
     }
 

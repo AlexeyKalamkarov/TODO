@@ -16,6 +16,20 @@
   padding: 8px;
   outline: none;
 }
+.task .p-date {
+  width: auto;
+  white-space: nowrap;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: auto;
+  font-size: 1rem;
+  color: #fff;
+  background: #222222;
+  border: 1px #222222 solid;
+  border-radius: 10px;
+  padding: 8px;
+  outline: none;
+}
 .task button {
   padding: 4px;
   display: flex;
